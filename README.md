@@ -12,18 +12,6 @@ A Go-based library for building forward and reverse proxies with support for rou
 - **SSL/TLS Termination:** Secure your proxy with HTTPS.
 - **Configurable:** Easily configure proxy modes, backend servers, and SSL settings.
 
----
-
-## Installation
-
-Install the library using `go get`:
-
-```bash
-go get github.com/yourusername/go-proxy-library
-
-Usage: See Examples
-
-
 Configuration: Edit the proxy settings in the config struct
 
 API Reference
@@ -38,13 +26,6 @@ func TLSConfig(certFile, keyFile string) (*tls.Config, error)
 Generates a TLS configuration using provided certificate and key files.
 func HTTPSProxy(handler http.Handler, certFile, keyFile string) (*http.Server, error)
 Creates an HTTPS server with TLS support.
-
-
-Here’s a README.md file for your Go proxy library:
-
-markdown
-Copy code
-# Go Proxy Library
 
 A Go-based library for building forward and reverse proxies with support for round-robin load balancing and SSL/TLS termination. This library is designed to be lightweight, flexible, and easy to integrate into your applications.
 
